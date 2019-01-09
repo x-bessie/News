@@ -1,8 +1,6 @@
 package utils;
 
 import Mapper.LocalhostMapper;
-import dao.LoalhostDao;
-import entity.All;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,6 +13,7 @@ public class LocalhostDB {
 
     static {
         try {
+
             String resource = "mybatis/mybatis-cfg-wb_xy.xml";
             InputStream inputStream = Resources.getResourceAsStream(resource);
             sessionFactory = new SqlSessionFactoryBuilder().build(inputStream);

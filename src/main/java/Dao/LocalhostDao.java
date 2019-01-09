@@ -1,4 +1,4 @@
 package Dao;
 
-public class lLocalhostDao {
+public class LocalhostDao {
 }
